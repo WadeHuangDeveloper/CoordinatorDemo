@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OfY-jd-xdi">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="gyG-VJ-8xi">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="ERG-by-fjY" customClass="LoginViewController" customModule="CoordinatorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5wj-YO-e6k">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zb-Jq-gAd">
+                                <rect key="frame" x="40" y="408.66666666666669" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LOGIN"/>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="ERG-by-fjY" eventType="touchUpInside" id="7uh-EO-vB4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Dg-IK-Bkt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Dg-IK-Bkt" firstAttribute="trailing" secondItem="2zb-Jq-gAd" secondAttribute="trailing" constant="40" id="1O2-8j-142"/>
+                            <constraint firstItem="2zb-Jq-gAd" firstAttribute="leading" secondItem="7Dg-IK-Bkt" secondAttribute="leading" constant="40" id="Jm9-To-cFH"/>
+                            <constraint firstItem="2zb-Jq-gAd" firstAttribute="centerY" secondItem="5wj-YO-e6k" secondAttribute="centerY" id="SNh-FK-oJS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ijq-Jc-jhN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbo-Eo-cA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="-254"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c3R-T8-F1h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OfY-jd-xdi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Khe-7D-1Qk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ERG-by-fjY" kind="relationship" relationship="rootViewController" id="K1g-WE-BqQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZj-in-uEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967.17557251908397" y="-253.52112676056339"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="lat-wC-B9B">
+            <objects>
+                <viewController storyboardIdentifier="PaymentViewController" id="eml-Nv-ytp" customClass="PaymentViewController" customModule="CoordinatorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNY-3d-mra">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPd-Ua-wX7">
+                                <rect key="frame" x="40" y="408.66666666666669" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PAY"/>
+                                <connections>
+                                    <action selector="didTapPayButton:" destination="eml-Nv-ytp" eventType="touchUpInside" id="gZ9-dg-mKJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XD3-aE-o0i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PPd-Ua-wX7" firstAttribute="centerY" secondItem="uNY-3d-mra" secondAttribute="centerY" id="BGj-pJ-bHb"/>
+                            <constraint firstItem="PPd-Ua-wX7" firstAttribute="leading" secondItem="XD3-aE-o0i" secondAttribute="leading" constant="40" id="uTU-NA-5Gk"/>
+                            <constraint firstItem="XD3-aE-o0i" firstAttribute="trailing" secondItem="PPd-Ua-wX7" secondAttribute="trailing" constant="40" id="zEy-RO-KWu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KNp-wq-Qlo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrC-pF-ORc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2674" y="-254"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="DvR-Oo-wl8">
+            <objects>
+                <viewController storyboardIdentifier="ProductViewController" id="qBb-jb-Yvj" customClass="ProductViewController" customModule="CoordinatorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j2g-j2-QMy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwR-9v-jte">
+                                <rect key="frame" x="40" y="408.66666666666669" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BUY"/>
+                                <connections>
+                                    <action selector="didTapBuyButton:" destination="qBb-jb-Yvj" eventType="touchUpInside" id="vqh-4r-YKW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Omu-3R-pbl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AwR-9v-jte" firstAttribute="centerY" secondItem="j2g-j2-QMy" secondAttribute="centerY" id="Bzd-H8-z0P"/>
+                            <constraint firstItem="Omu-3R-pbl" firstAttribute="trailing" secondItem="AwR-9v-jte" secondAttribute="trailing" constant="40" id="ajj-ap-91k"/>
+                            <constraint firstItem="AwR-9v-jte" firstAttribute="leading" secondItem="Omu-3R-pbl" secondAttribute="leading" constant="40" id="nt9-lA-Bt5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Htq-uo-h3r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwk-zC-0gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="-254"/>
+        </scene>
+        <!--Verify View Controller-->
+        <scene sceneID="JmB-WF-d9R">
+            <objects>
+                <viewController storyboardIdentifier="VerifyViewController" id="ueo-bO-WDB" customClass="VerifyViewController" customModule="CoordinatorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e8Y-86-5QB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZN-mP-Xeb">
+                                <rect key="frame" x="40" y="408.66666666666669" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="VERIFY"/>
+                                <connections>
+                                    <action selector="didTapVerifyButton:" destination="ueo-bO-WDB" eventType="touchUpInside" id="OUr-Ov-7Eg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wGs-sC-hH5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IZN-mP-Xeb" firstAttribute="centerY" secondItem="e8Y-86-5QB" secondAttribute="centerY" id="jmN-Ti-SXQ"/>
+                            <constraint firstItem="wGs-sC-hH5" firstAttribute="trailing" secondItem="IZN-mP-Xeb" secondAttribute="trailing" constant="40" id="lah-b5-Bx5"/>
+                            <constraint firstItem="IZN-mP-Xeb" firstAttribute="leading" secondItem="wGs-sC-hH5" secondAttribute="leading" constant="40" id="nPj-kD-lGv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rL4-iH-h4g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNV-R3-R18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="-254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
